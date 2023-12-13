@@ -1,0 +1,10 @@
+/*Poppins*/
+@font-face {
+    font-family: 'Poppins';
+    src: url('./Poppins/Poppins-Regular.ttf') format('truetype');
+}
+/*Fanwood*/
+@font-face {
+    font-family: 'Fanwood';
+    src: url('./Fanwood_Text/FanwoodText-Regular.ttf') format('truetype');
+}

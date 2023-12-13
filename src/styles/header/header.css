@@ -1,0 +1,116 @@
+@import url(../../fonts/fonts.css);
+
+  .header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    outline: 1px solid #69788C;
+    background: #070C26;
+  }
+  
+  .title-page {
+    width: auto;
+    margin: 0;
+    padding: 10px 15px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-family: 25px;
+    color: #F2F2F2;
+  }
+  .nav{
+    width: fit-content;
+    height: 50px;
+    display: grid;
+    padding: 0px 10px;
+    grid-template-columns: repeat(2, minmax(120px, 250px));
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+  }
+  .nickName{
+    padding: 0 10px;
+    font-size: 1.1em;
+    color: #C3D0CF;
+  }
+  .routes{
+    justify-self: center;
+    width: 220px;
+    height: max-content;
+    background: #5F49F2;
+    padding: 3px 15px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 15px;
+  }
+  a, .nickName{
+    font-family: 'Fanwood', 'Times New Roman', Times, serif;
+  }
+  a{
+    text-decoration: none;
+  }
+  .routes > a{
+    width: 55px;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 1.1em;
+    color: #F2F2F2;
+    border-right: 1px solid #69788C;
+    border-radius: 0px;
+  }
+  .routes a:last-child{
+    border: none;
+  }
+  .container-login{
+    justify-self: end;
+    width: 210px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .container-login > a{
+    padding: 7px 15px;
+    border-radius: 10px;
+  }
+  .container-login> a:first-child{
+    background-color: #07338C;
+    color: #F2F2F2;
+    transition: transform 120ms ease-in, box-shadow 120ms ease, margin-rigth 120ms ease-in-out;
+  }
+  .container-login>A:first-child:hover{
+    transform: scale(1.01);
+    box-shadow: 2px 2px 2px #3542b3;
+    margin-right: 10px;
+  }
+  .container-login > a:last-child{
+    color: #f2f2f2;
+    outline: 1px solid #5F49F2;
+  }
+
+  /*Medidas adaptables para telefonos*/
+  @media only screen and (max-width: 480px){
+    .header{
+      height: auto;
+      flex-direction: column;
+    }
+    .title-page{
+      text-align: center
+    }
+    .nav{
+      align-self: flex-end;
+        border-radius: 0;
+        margin: 0;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .routes{
+        display: none;
+    }
+
+  }
+
+  /*Medidas adapatables para tabletas*/
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+    .nav{
+      width: 500px;
+    }
+  }

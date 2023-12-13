@@ -1,0 +1,16 @@
+video{
+    max-width: 640px;
+    height: 360px;
+    display: block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 15px;
+    margin: 0 0 20px;
+}
+@media only screen and (max-width: 480px){
+    video{
+        width: 90%;
+        height: auto;
+    }
+
+  }
