@@ -20,7 +20,7 @@
     background-color: none;
   }
   
-  .container-picture {
+  .container-picture-form {
     flex: 1;
     background-color: none;
     width: 40vw;
@@ -30,10 +30,12 @@
     justify-content: center;
   }
   
-  .container-picture picture img {
+  .container-picture-form picture img {
     max-width: 100%;
     max-height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    box-shadow: none;
+    border: none;
   }
   .container-article{
     align-items: flex-end;justify-self: flex-end;
@@ -98,9 +100,11 @@
     box-sizing: border-box;
     border: 2px solid #383673;
     border-radius: 10px;
+    
   }
   input:focus{
     border: 2px solid #0798F2;
+    box-shadow: 1px 1px 15px #383673;
   }
   .btn-success {
     width: 120px;

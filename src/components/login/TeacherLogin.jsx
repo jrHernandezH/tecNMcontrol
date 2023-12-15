@@ -7,7 +7,7 @@ function TeacherLogin() {
     <>
         <main className="container-b">
             <section className='login'>
-            <aside className="container-picture">
+            <aside className="container-picture-form">
                 <picture>
                 <source srcSet='/assets/img/owl-removebg-preview.png'/>
                 <img src="/assets/img/owl-removebg-preview.png" alt="owl" />

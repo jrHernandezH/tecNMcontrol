@@ -1,0 +1,151 @@
+main{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.about-us{
+    margin: 10px auto 20px;
+    width: 450px;
+    padding: 10px 15px;
+    border: 0 1px solid #262626;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px .9px #c7c7c7;
+}
+.about-us h2{
+    font-size: 2em;
+    font-family: 'Poppins', sans-serif;
+    color: #262626;
+    margin: 0;
+}
+.about-us p{
+    text-align: justify;
+    color: #464646;
+}
+.container-picture {
+    width: 90%;
+    height: 60vh; 
+    margin: 0 auto;
+    border: 0 1px solid #262626;
+    border-radius:  15px;
+    
+    box-shadow: 5px 5px 2px #c7c7c7;
+    overflow: hidden;
+    position: relative;
+}
+  
+.container-picture picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+  
+  .container-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    object-position:unset;
+}
+ 
+.container-frase{
+    margin: 40px auto 20px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 550px));
+    grid-template-rows: 380px;
+    justify-content: space-around;
+    column-gap: 20px;
+}
+.texto-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.comillas{
+    height: 80px;
+    margin: 0;
+    font-size: 6.2em;
+    font-family: 'Whisper';
+    font-weight: 500;
+    transform: scaleY(-1);
+    text-transform: lowercase;
+}
+.derecha{
+    align-self: flex-start;
+    margin: 0 10px ;
+    transform: rotate(-180deg);;
+}
+.texto-frase{
+    width: 400px;
+    margin: 0;
+    align-self: center;
+    font-size: 1.6em;
+    text-wrap: balance;
+    color: #262626;
+    font-weight: 70;
+}
+.izquierda{
+    margin: 0 10px;
+    align-self: flex-end;
+}
+
+.container-picture-frase{
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.container-picture picture{
+    width: 100%;
+    height: 100%;
+}
+.container-picture-frase picture img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*Medidas adaptables para telefonos*/
+@media only screen and (max-width: 480px){
+    .about-us{
+        width: 80%;
+    }
+    .about-us h2{
+        font-size: 1.3em;
+    }
+    .about-us p{
+        font-size: .9em;
+    }
+    .container-picture{
+        width: 90%;
+        height: 180px;
+        margin: 0 auto;
+    }
+    .container-picture picture{
+        height: 100%;
+    }
+    .container-picture picture img{
+        height: 100%;
+    }
+    .container-frase{
+        width: 90%;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .texto-container{
+        width: 90%;
+        height: auto;
+    }
+    .comillas{
+        width: 25px;
+        height: 40px;
+        font-size: 4em;
+    }
+    .texto-frase{
+        width: 90%;
+        height: auto;
+        font-size: 1.1em;
+    }
+}

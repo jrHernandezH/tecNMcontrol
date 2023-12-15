@@ -8,3 +8,7 @@
     font-family: 'Fanwood';
     src: url('./Fanwood_Text/FanwoodText-Regular.ttf') format('truetype');
 }
+@font-face {
+    font-family: 'Whisper';
+    src: url('./Whisper/Whisper-Regular.ttf');
+}

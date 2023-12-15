@@ -1,23 +1,18 @@
 import React from 'react'
 import Head from '../components/Head'
-import Home from '../components/Home'
-import Data from '../components/Data'
-import Video from '../components/videos/Video'
 import Footer from '../components/Footer'
+import Map from '../components/maps/Map'
 
-function Landyn() {
-  
+function LandynContact() {
   return (
     <>
         <div className="container">
             <Head/>
-            <Home/>
-            <Data/>
-            <Video/>
+            <Map />
             <Footer/>
         </div>
     </>
   )
 }
 
-export default Landyn
+export default LandynContact

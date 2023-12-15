@@ -2,8 +2,12 @@ body, html{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
+*{
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
 .container{
     width: 100%;
     display: flex;

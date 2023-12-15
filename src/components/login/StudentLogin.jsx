@@ -7,7 +7,7 @@ function StudentLogin() {
     <>
       <main className="container-b">
           <section className='login'>
-            <aside className="container-picture">
+            <aside className="container-picture-form">
               <picture>
                 <source srcSet='/assets/img/owl-removebg-preview.png'/>
                 <img src="/assets/img/owl-removebg-preview.png" alt="owl" />
@@ -21,11 +21,11 @@ function StudentLogin() {
               <form className='form'>
                   <div className="input-group">
                       <span >Username</span>
-                      <input type="text" id='username' required/>
+                      <input type="text" id='username' required autoComplete='off'/>
                   </div>
                   <div className="input-group">
                     <span >Password</span>
-                    <input type="password" id='password' required/>
+                    <input type="password" id='password' required autoComplete='off'/>
                   </div>
                   <button className='btn-success'>Ingresar</button>
               </form>
