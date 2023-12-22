@@ -6,7 +6,7 @@
   background-color: #0798F2;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   
 }
 .login {
@@ -76,8 +76,8 @@
     width: 25vw;
     display: flex;
     flex-direction: column;
-    align-items: start;
-    justify-content: start;
+    align-items: flex-start;
+    justify-content: flex-start;
   }
   
   .input-group {
@@ -189,11 +189,6 @@
       width: 80%;
       margin: 15px 0;
     }
-  }
-
-  /*Medidas adapatables para tabletas*/
-  @media only screen and (min-width: 481px) and (max-width: 768px) {
-    
   }
   
   
