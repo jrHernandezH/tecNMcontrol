@@ -10,8 +10,46 @@ body, html{
 
 .container{
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+    height: 100vh;
+    background-color: var(--body-color);
+    transition: var(--tran-02);
 }
+.container.dark{
+    --body-color: #18191A;
+    --sidebar-color: #242526;
+    --primary-color: #3A3B3C;
+    --primary-color-ligth: #3A3B3C;
+    --toggle-color: #FFF;
+    --text-color: #CCC;
+
+    --tran-02: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.4s ease;
+    --tran-05: all 0.5s ease;
+}
+.container.dark .switch::before{
+    transition: var(--tran-03);
+    left: 25px;
+}
+.container.dark .sidebar li a:hover .icon,
+.container.dark .sidebar li a:hover .text{
+    color: var(--sidebar-color);
+}
+.container.dark .sidebar header .toggle{
+    color: var(--text-color);
+
+}
+:root{
+    --body-color: #E4E9F7;
+    --sidebar-color: #FFF;
+    --primary-color: #695CFE;
+    --primary-color-ligth: #F6F5FF;
+    --toggle-color: #DDD;
+    --text-color: #707070;
+
+    --tran-02: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.4s ease;
+    --tran-05: all 0.5s ease;
+}
+
