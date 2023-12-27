@@ -25,10 +25,12 @@
     padding: 10px 14px;
     background-color: var(--sidebar-color);
     transition: var(--tran-05);
+    z-index: 10;
 }
 .sidebar.close{
     width: 65px;
-}.sidebar.close .text{
+}
+.sidebar.close .text{
     opacity: 0;
     transition: var(--tran-03);
 }
@@ -40,7 +42,7 @@
     transition: var(--tran-04);
 }
 .sidebar.close header .toggle{
-    transform: translateY(-50%) rotate(180deg);
+    transform: translateY(-50%);
 }
 .sidebar ul{
     padding: 0;
@@ -83,16 +85,18 @@ header .image-text .header-text{
 }
 .header-text .name{
     font-weight: 600;
+    padding: 5px 15px;
+    text-align: center;
 }
 .header-text .profession{
-    margin-top: -2px;
+    text-align: center;
 }
 
 .sidebar header .toggle{
     position: absolute;
     top: 50%;
     right: -25px;
-    transform: translateY(-50%);
+    transform: translateY(-50%) rotate(180deg);
     background: var(--primary-color);
     display: flex;
     align-items: center;
@@ -161,7 +165,7 @@ header .image-text .header-text{
 }
 .menu-bar .mode  .toggle-switch{
     position: absolute;
-    right: 20px;
+    right: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -178,6 +182,7 @@ header .image-text .header-text{
     width: 44px;
     border-radius: 25px;
     background: var(--toggle-color);
+    left: 5px;
 }
 .switch::before{
     content: '';
@@ -192,3 +197,30 @@ header .image-text .header-text{
     background: var(--sidebar-color);
 }
 
+  @media only screen and (max-width: 480px){
+    .sidebar.close{
+        transform: translateX(-100px);
+    }
+    .sidebar.close header .toggle{
+        transform: translateY(-50%) translateX(30px);
+        width: 30px;
+        height: 30px;
+        font-size: 2em;
+    }
+    .sidebar.close + .dash{
+        width: 100%;
+        left: 0;
+    }
+    .sidebar .menu-bar{
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+  }
+
+  /*Medidas adapatables para tabletas*/
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+    
+  }

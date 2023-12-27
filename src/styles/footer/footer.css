@@ -1,7 +1,6 @@
+
 footer{
-    margin-top: -20px;
-    width: 100%;
-    padding:  0px;
+    width: 80%;
     background-size: cover;
     border-top: 1px solid rgba(0, 0, 0, .1);
 }
@@ -9,21 +8,18 @@ footer{
 .container__footer{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: auto;
+    justify-content: space-around;
+    max-width: 100%;
 }
 
 .box__footer{
     display: flex;
     flex-direction: column;
-    padding: 40px;
 }
 
 .box__footer .logo img{
-    width: 140px;
+    width: 100px;
     height: auto;
-    border-radius: 10px;
     transition: transform 120ms ease-in-out;
 }
 .logo img:hover{
@@ -31,7 +27,7 @@ footer{
 }
 
 .box__footer .terms{
-    max-width: 300px;
+    max-width: 250px;
     margin-top: 0px;
     font-weight: 500;
     font-size: 18px;
@@ -62,7 +58,7 @@ footer{
 }
 
 .box__copyright{
-    max-width: 1200px;
+    max-width: 100%;
     margin: auto;
     text-align: center;
     padding: 0px 40px;

@@ -27,8 +27,8 @@ function Head({containerRef}) {
             
 
             <div className="text header-text">
-              <span className="name">Landyn</span>
-              <span className="profession">Web Developer</span>
+              <span className="name">TecNMControl</span>
+              <span className="profession">Dev-Bobby</span>
             </div>
           </div>
           <i className="bx bx-chevron-right toggle" ref={toggleRef} onClick={toggle}></i>
@@ -41,7 +41,7 @@ function Head({containerRef}) {
             </li>
             <ul className="menu-links">
               <li className="nav-link">
-                <NavLink>
+                <NavLink to="/">
                   <i className="bx bx-home-alt icon"></i>
                   <span className="text nav-text">Home</span>
                 </NavLink>
@@ -81,7 +81,7 @@ function Head({containerRef}) {
 
           <div className="bottom-content">
             <li className="">
-              <NavLink>
+              <NavLink to="/login/student">
                 <i className="bx bx-log-in icon"></i>
                 <span className="text nav-text">Loggin</span>
               </NavLink>
